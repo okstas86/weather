@@ -1,0 +1,31 @@
+@import "../styles/variables.scss";
+.search {
+  width: 400px;
+  height: 30px;
+  margin: 0 50px 20px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(#{--components-background-default});
+  box-shadow: var(--card-shadow-default);
+  border-radius: $border-radius;
+  input,
+  button {
+    border-radius: 10px;
+    border: solid $base-color;
+    cursor: pointer;
+  }
+  button {
+    background-color: $primary-color;
+    color: $dark-color;
+    font-weight: bold;
+  }
+
+  input:hover {
+    border-color: $primary-color;
+  }
+  button:hover {
+    background-color: $base-color;
+    color: $light-color;
+  }
+}
